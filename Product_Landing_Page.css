@@ -1,0 +1,358 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body{
+	background-color: #D5DBDB;
+	font-family: 'Times New Roman', Times, serif;	
+	max-width: 100%;
+	user-select: none;
+}
+
+/* Header CSS */
+
+nav{
+    width: 100%;                                   /* for fixed navbar */
+    height: 80px;
+	display: flex;
+	background-color: #D5DBDB;                   /* for fixed navbar */
+	border-bottom: 2px solid black;
+	top: 0;                                        /* for fixed navbar */
+	left: 0;                                       /* for fixed navbar */
+	z-index: 1;                                    /* for fixed navbar */
+	position: fixed;                               /* for fixed navbar */
+}
+
+#col-left{
+	padding-top: 25px;
+	padding-left: 125px;
+}
+
+#col-left h1{
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #2980B9;
+	font-size: 30px;
+}
+
+#col-right ul{
+	display: flex;
+	padding-top: 30px;
+	padding-left: 400px;
+	gap: 60px;
+}
+
+#col-right li a{
+	text-decoration: none;
+    font-weight: 500;
+    line-height: 1;
+    font-size: 20px;
+    text-align: right;
+    color: #2980B9;
+    behavior: smooth;
+}
+
+#col-right li a:hover{
+	font-weight: bold;
+	border-bottom: 3px solid #C0392B;
+}
+
+/* Main CSS */
+
+#main-div{
+	max-width: 100%;
+	height: 450px;
+	/* margin: 15px 0; */
+	background-color: white;
+	padding: 120px;
+	margin-top: 80px;                            /* for fixed navbar */
+	display: flex;
+}
+
+#main-heading{
+	color: #2980B9;
+	font-size: 35px;
+	line-height: 1;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#para {
+	margin-top: 30px;
+	font-size: 14px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: black;
+}
+
+#buttons{
+	display: flex;
+	gap: 15px;
+}
+
+#btn1{
+	margin-top: 30px;
+	padding: 8px 20px;
+	background-color: #2471A3;
+	color: white;
+	border-radius: 5px;
+	border-color: transparent;
+	cursor: pointer;
+}
+
+#btn2{
+	margin-top: 30px;
+	padding: 8px 20px;
+	background-color: #F2F3F4;
+	color:  #2471A3;
+	border-radius: 5px;
+	border-color: transparent;
+	cursor: pointer;
+	border-color: #2471A3;
+}
+
+#sub-div2{
+	margin-left: 160px;
+}
+
+#pic-title{
+	margin-left: 40px;
+	color: #2980B9;
+	font-size: 30px;
+	line-height: 1;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+/* Products CSS */
+
+#main-content{
+	max-width: 100%;
+	height: 500px;
+	background-color: #D5DBDB;
+	/* margin: 30px; */
+}
+
+.headings{
+	padding: 0 48%;
+	margin-top: 10px;
+	color: #2980B9;
+	font-weight: bold;
+	font-size: 35px;
+}
+
+#headings1{
+	padding: 0 46%;
+	margin-top: 10px;
+	color: #2980B9;
+	font-weight: bold;
+	font-size: 35px;
+}
+
+.carts{
+	max-width: auto;
+	margin: 20px 40px;
+	padding: 15px 30px;
+	display: flex;
+}
+
+.cart-boxes{
+	border: 1px solid white;
+	border-radius: 10px;
+	max-width: 350px;
+	background-color: white;
+	padding:  5px 25px;
+	margin: 20px 30px;
+	transition: ease-in-out;
+	transition-duration: 1s;
+	box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.cart-boxes:hover{
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.cart-boxes img{
+	padding-left: 30px;
+}
+
+.product-heading{
+	font-size: 18px;
+	font-family:  Verdana, Geneva, Tahoma, sans-serif;
+	padding: 10px 0;
+	text-align: center;
+}
+
+.product-description{
+	font-family:  Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 12px;
+	font-weight: 500;
+	text-align: center;
+}
+
+.product-price{
+	text-align: center;
+	font-weight: bold;
+	font-family:  Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 15px;
+	padding: 5px 0;
+}
+
+.cart-button{
+	border: 1px solid black;
+	border-radius: 6px;
+	background-color: white;
+	color: black;
+	margin: 10px 0;
+	margin-left: 60px;
+	padding: 10px 50px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.cart-button:hover{
+	background-color: black;
+	color: white;
+}
+
+/* Sub-Footer CSS */
+
+.icon-portion1{
+	max-width: 100%;
+	display: flex;
+	background-color: mintcream;
+	margin: 40px 0;
+	padding: 30px;
+	gap: 30px;
+}
+
+.shipping-icon{
+	padding-left: 80px;
+}
+
+.shipping-para{
+	margin-left: 15px;
+	margin-top: 5px;
+}
+
+#charges{
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.shipping-para p{
+	font-size: 15px;
+}
+
+.icon-portion2{
+	padding-left: 80px;
+}
+
+#open{
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.open-para{
+	margin-left: 15px;
+	margin-top: 5px;
+}
+
+.open-para p{
+	font-size: 15px;
+}
+
+.icon-portion3{
+	padding-left: 80px;
+}
+
+#track{
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.track-para{
+	margin-left: 15px;
+	margin-top: 5px;
+}
+
+.track-para p{
+	font-size: 15px;
+}
+
+/* Footer CSS */
+
+.footer{
+	max-width: 100%;
+	background-color:  #D5DBDB;
+	padding: 25px 0;
+	padding-left: 90px;
+	display: flex;
+}
+
+.div-1 button{
+	border: transparent;
+	border-radius: 15px;
+	background-color: #28B463;
+	color: white;
+	margin: 20px 5px;
+	padding: 10px;
+	cursor: pointer;
+}
+
+button:hover{
+	transition: all .5s ease;
+	font-size: 15px;
+}
+
+.icon i{
+	display: inline-block;
+	margin: 10px 10px;
+	position: relative;
+	border: 2px solid black;
+	border-collapse: collapse;
+	padding: 5px;
+	cursor: pointer;
+}
+
+.footer-about{
+	float: left;
+	align-items: center;
+	margin: 10px 80px;
+}
+
+.footer-about a{
+	line-height: 2.5;
+	color: black;
+	text-decoration: none;
+}
+
+.footer-account{
+	float: left;
+	align-items: center;
+	margin: 10px 80px;
+}
+
+.footer-account a{
+	line-height: 2.5;
+	color: black;
+	text-decoration: none;
+}
+
+.footer-care{
+	float: left;
+	align-items: center;
+	margin: 10px 80px;
+}
+
+.footer-care a{
+	line-height: 2.5;
+	color: black;
+	text-decoration: none;
+}
